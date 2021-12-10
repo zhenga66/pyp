@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>品优购</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta name="description" content="品优购商城"/>
+		<meta name="keywords" content="网上购物"/>
+		<style type="text/css">
+			* {
+				margin: 0; padding: 0;
+				box-sizing: border-box; text-decoration: none; list-style: none;
+			}
+			.w {
+				width: 1200px; margin: 0 auto; line-height: 30px; overflow: hidden;
+			}
+			.shortcut {
+				height: 30px; background-color: lightgray; font-size: 14px;
+			}
+			a{
+				color: #808080;
+			}
+			.style_red{
+				color: red;
+			}
+			.fl {
+				float: left;
+			}
+			.fr {
+				float: right;
+			}
+			.shortcut ul li {
+				float: left;
+			}
+			.fr ul li:nth-child(even) {
+				width: 1px; height: 12px; background-color: #666;
+				margin: 10px 10px 0;
+			}
+			.arrow-icon::after {
+				content: 'ˇ';
+				margin-left: 5px;
+			}
+			
+			.tup{
+			/* 	background: url(./img/ask.jpg) no-repeat; */
+				width: 100px; height: 100px;background-color: cadetblue; float: left;
+			}
+			.tup img{ width: 100%; height: 100%;}
+			.service_txt{vertical-align: middle;}
+			.hezi{margin: 20px 0 0 20px; border: 1px solid #666666; width: 200px;
+			 height: 150px; border-top: 0; border-right: 0;}
+			.hezi ul{
+				 width: 205px;
+			 }
+			.hezi ul li {
+				float: left;
+				width: 50px; height: 50px; border-right: 1px solid #666666;
+				border-bottom: 1px solid #666666;
+				font-size: 14px; cursor: pointer;
+				text-align: center;
+			}
+			.hezi ul li i{
+				background: url(favicon.ico) no-repeat; margin-top: 4px;
+				background-color: #5F9EA0; width: 20px; height: 20px; display: inline-block;
+			}
+			#box{border: 1px solid #666666; width: 200px;
+			 height: 100px; padding: 5px 10px; margin: 20px;
+			}
+			#box ul li{
+				width: 80px; height: 25px; line-height: 25px; float: left;
+				border-bottom: 1px solid #666666; margin-left: 5px; text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 快捷导航栏 -->
+		<section class="shortcut">
+			<div class="w">
+				<!-- 左 -->
+				<div class="fl">
+					<ul>
+						<li>品优购欢迎您 ! &nbsp;</li>
+						<li><a href="">请登录 &nbsp;</a></li>
+						<li><a href="" class="style_red">免费注册</a></li>
+					</ul>
+				</div>
+				<!-- 右 -->
+				<div class="fr">
+					<ul>
+						<li>我的订单</li>
+						<li></li>
+						<li class="arrow-icon">我的品优购</li>
+						<li></li>
+						<li>品优购会员</li>
+						<li></li>
+						<li>企业采购</li>
+						<li></li>
+						<li class="arrow-icon">关注品优购</li>
+						<li></li>
+						<li class="arrow-icon">客户服务</li>
+						<li></li>
+						<li class="arrow-icon">网站导航</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div>
+			<ul>
+				<li style="display: flex; align-items: center;" >
+					<h5 class="tup"><img src="img/malu.jpg" ></h5>
+					<div class="service_txt">
+						<h4>正品保障</h4>
+						<p>正品保证</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="hezi">
+			<ul class="hezi2">
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+				<li>
+					<i></i>
+					<p>哈哈</p>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="box">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			// let lia = document.querySelector('.hezi2')
+			let lia = document.getElementsByClassName('hezi2')[0].children[1]
+			console.log(lia)
+			lia.onclick = function(){
+				console.log(11)
+			}
+		</script>
+	</body>
+</html>
